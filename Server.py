@@ -1,3 +1,5 @@
+#Ping found at https://stackoverflow.com/questions/2953462/pinging-servers-in-python
+
 class Server:
     """ Server class for representing and manipulating servers. """
 
@@ -7,4 +9,6 @@ class Server:
 
     def ping(self):
         # TODO - Use os module to ping the server
-        return
+        import os
+        host_ip = self.server_ip # example
+        response = os.system("ping " + host_ip)
